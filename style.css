@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.wrapper {
+  background-color: #c4c4c4;
+  width: 500px;
+  height: 700px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.container {
+  padding: 40px;
+  position: relative;
+}
+
+.input {
+  outline: 0;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+  font-size: 48px;
+  text-shadow: 0px 3px 3px rgb(75, 72, 72);
+}
+
+.disabled-option {
+  pointer-events: none;
+}
+
+.resultsList {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  width: 84%;
+  padding: 0;
+}
+
+.resultsList li {
+  border: 2px solid #000000;
+  padding: 2px;
+  padding-left: 10px;
+  background-color: #e3e3e3;
+  margin: 0;
+  font-size: 30px;
+}
+
+.resultsList li:hover {
+  background-color: #65cdf9;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.savedResultsList {
+  background-color: #e27beb;
+  max-width: 100%;
+  margin-top: 250px;
+  padding: 0;
+  list-style: none;
+}
+.addedOption {
+  list-style: none;
+  border: 1px solid #000000;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 24px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 30px;
+  margin: 5px;
+}
+
+.close::before,
+.close::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 5px;
+  top: 22.5px;
+  background: rgb(255, 0, 0);
+}
+.close:hover {
+  opacity: 0.2;
+  transition: opacity ease 0.3s;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
